@@ -1,0 +1,48 @@
+/*清除浮动*/
+.clear-fix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/*自定义专用button*/
+.button-special {
+    border: none;
+    border-radius: 6%;
+    width: 100px;
+    padding: 12px 24px;
+    color: #eee;
+    font-size: 0.8em;
+    background: #ff3738;
+    display: inline-block;
+    margin: 0 auto;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* --------------------------- 文本 ----------------------------- */
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-lowercase {
+    text-transform: lowercase;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
