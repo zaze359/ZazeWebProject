@@ -1,3 +1,13 @@
+
+.body-default {
+    padding: 8px;
+}
+
+
+
+
+
+
 /*清除浮动*/
 .clear-fix:after {
     content: '';
