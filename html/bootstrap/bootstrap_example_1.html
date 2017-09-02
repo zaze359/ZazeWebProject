@@ -268,9 +268,14 @@
         $("#my-navbar-collapse").find(".dropdown-menu a").click(function () {
             var href = $(this).attr("href");
 //            console.log(href);
-            $("#tab-list").find("a[href='" + href +"']").tab("show");
+            $("#tab-list").find("a[href='" + href + "']").tab("show");
         });
     });
+
+
+    $('#myCarousel').carousel({
+        interval: 1000
+    })
 
 
 </script>

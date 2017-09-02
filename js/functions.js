@@ -1,7 +1,6 @@
 /**
  * Created by zaze on 2017/6/11.
  */
-
 // 定义向量
 function vector(a, b) {
     return {
