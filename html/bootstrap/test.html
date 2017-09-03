@@ -4,66 +4,90 @@
     <meta charset="UTF-8">
     <title>Test UI</title>
     <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .main-footer {
+            background: #000000;
+            padding: 10px 0;
+        }
+
+        .main-footer .toTop {
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            bottom: 15px;
+            right: 10px;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .main-footer .title {
+            color: #ffffff;
+        }
+
+        .main-footer a {
+            color: #959595;
+        }
+
+        .main-footer .tag-cloud a {
+            border: 1px solid #303030;
+            padding: 4px 8px;
+            margin: 6px;
+            float: left;
+        }
+
+        .main-footer .copyright {
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+            color: #555;
+        }
+    </style>
 </head>
-<style>
-    .showcase {
-        height: 345px;
-    }
-    .showcase a{
-        color: #888;
-        text-decoration: none;
-    }
-    .showcase_img img {
-        width: 100%;
-        height: auto;
-    }
-
-    .showcase h4 {
-        position: relative;
-        margin: 10px 0;
-        font-size: 14px;
-        color: #686868;
-        font-weight: bold;
-        max-height: 40px;
-        overflow: hidden;
-        line-height: 20px;
-        padding-left: 15px;
-    }
-
-    .showcase .showcase_info{
-        color: #909090;
-        font-size: 12px;
-        overflow: hidden;
-        max-height: 57px;
-    }
-
-</style>
 <body>
-<div class="container">
-    <div class="row">
-        <div class="col-md-4 col-xs-6">
-            <div class="showcase">
-                <div class="showcase_time">
-                    <span class="pull-right">
-                        <a href="" class=" text-center right">News</a>
-                    </span>
-                    2017-09-01
+
+<div style="height: 1000px"></div>
+
+<footer class="main-footer">
+    <p class="pull-right toTop">
+        <a href="#top">
+            <span class="glyphicon glyphicon-arrow-up"></span>
+        </a>
+    </p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h4 class="title"></h4>
+                <div class="content"></div>
+            </div>
+            <div class="col-md-4">
+                <h4 class="title">友情链接</h4>
+                <div class="content tag-cloud">
+                    <a href="http://www.bootcss.com/" title="Bootstrap中文网"
+                       onclick="_hmt.push(['_trackEvent', 'link', 'click', 'Bootstrap中文网'])"
+                       target="_blank">Bootstrap</a>
+                    <a href="http://www.jquery123.com/" title="jQuery中文文档"
+                       onclick="_hmt.push(['_trackEvent', 'link', 'click', 'jQuery中文文档'])" target="_blank">jQuery</a>
+                    <a href="http://glyphicons.com/" title="Glyphicons" target="_blank">Glyphicons</a>
                 </div>
-                <div class="showcase_img">
-                    <!--<img class="" src="http://image.g-cores.com/f57d1439-bad1-4770-ae0a-79b65660cf43.jpg?x-oss-process=style/original_hs" alt="">-->
-                    <img class="" src="../../img/1.png" alt="">
-                </div>
-                <div class="showcase_text">
-                    <h4>
-                        <a href="">CEDEC AWARDS 2017塞尔达“一箭双雕”，坂口博信获特别奖</a>
-                    </h4>
-                    <div class="showcase_info">只有来自同行的肯定，才是赤裸裸……呃，赞美</div>
+            </div>
+            <div class="col-md-4">
+                <h4 class="title"></h4>
+                <div class="content">
                 </div>
             </div>
         </div>
     </div>
-</div>
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <span>&copy ZAZE - 2017</span>
+                </div>
+            </div>
 
+        </div>
+    </div>
+</footer>
 </body>
 <script src="../../js/jquery-3.2.1.min.js"></script>
 <script src="../../js/bootstrap.min.js"></script>
