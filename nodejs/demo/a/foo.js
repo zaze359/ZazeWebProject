@@ -4,7 +4,7 @@
 
  // exports.a = 1 
 
-function View(){
+function View() {
   	this.speak = function s(word) {
 		console.log(word);
 		// var service = require('_http_server');
@@ -14,11 +14,11 @@ function View(){
  }
 
  View.prototype.test = function(){
-  console.log('test')
+    console.log('test')
  };
 
  View.test1 = function(){
-  console.log('test1')
+    console.log('test1')
  };
 
 

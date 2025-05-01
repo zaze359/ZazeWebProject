@@ -20,11 +20,11 @@
 
 
 
-const foo = require('./foo');
+const foo = require('./foo.js');
 
 // const view = new foo.View();
+console.log(new foo.view());
 
-// console.log(foo.View);
-
-foo.View();
-// foo.View.speak('aaa');
+// foo.View();
+// foo.View.speak("aaa");
+// console.log(foo.View.speak);

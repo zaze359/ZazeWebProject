@@ -8,8 +8,26 @@
 
 </head>
 <body>
+<button onclick="startLoop()">startLoop</button>
+
 
 <script src="../js/jquery-3.2.1.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
+
+<script>
+
+
+    function startLoop() {
+        setTimeout(print11, 3000)
+    }
+
+    function print11() {
+        console.log('looping');
+        startLoop(startLoop, 3000)
+    }
+
+</script>
 </body>
+
+
 </html>
